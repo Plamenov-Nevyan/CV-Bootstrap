@@ -1,0 +1,34 @@
+main .row {
+    min-height: 100svh;
+}
+
+header {
+    min-height: 10svh;
+    z-index: 100;
+    position: sticky;
+    top: 0;
+    min-width: 100svw;
+}
+
+header .row-nav {
+    background-color: #3d7;
+    height: 10svh;
+}
+
+header .row-nav nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 10svh;
+}
+
+header .row-nav nav ul {
+    display: flex;
+    list-style-type: none;
+    gap: 2em;
+    align-items: center;
+}
+
+header .row-nav nav ul li {
+    cursor: pointer;
+}

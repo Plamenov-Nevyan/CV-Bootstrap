@@ -1,18 +1,43 @@
 main .row {
     min-height: 100svh;
 }
+main .about-section .curve::before {
+    content: '';
+    display: block;
+    position: absolute;
+    border-radius: 100% 50%;
+    width: 55%;
+    height: 100%;
+    transform: translate(85%, 60%);
+    background-color: hsl(216, 21%, 16%);
+}
+
+main .about-section .curve::after {
+    content: '';
+    display: block;
+    position: absolute;
+    border-radius: 100% 50%;
+    width: 55%;
+    height: 100%;
+    background-color: #3c31dd;
+    transform: translate(-4%, 40%);
+    z-index: -1;
+}
 
 header {
     min-height: 10svh;
     z-index: 100;
     position: sticky;
     top: 0;
-    min-width: 100svw;
+    min-width: 90svw;
 }
 
-header .row-nav {
-    background-color: #3d7;
-    height: 10svh;
+header .links-wrapper {
+    text-align: center;
+}
+
+header .links-wrapper a {
+    margin-right: 1em;
 }
 
 header .row-nav nav {
@@ -31,4 +56,30 @@ header .row-nav nav ul {
 
 header .row-nav nav ul li {
     cursor: pointer;
+}
+
+main .about-section .content-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+
+main .about-section .image-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 0 1 20%;
+    margin-top: 1em;
+}
+
+main .about-section .text-container {
+    flex: 1 1 100%;
+    justify-content: center;
+    align-items: flex-start;
+    margin-top: 0;
+}
+
+main .about-section .text-container h2 {
+    text-align: center;
 }

@@ -83,3 +83,7 @@ main .about-section .text-container {
 main .about-section .text-container h2 {
     text-align: center;
 }
+
+.skills-and-portfolio-section > div .progress {
+    height: 25px;
+}

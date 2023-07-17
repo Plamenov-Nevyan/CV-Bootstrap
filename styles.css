@@ -3,9 +3,37 @@ body {
 }
 
 main .row {
-    min-height: 60svh;
+    min-height: 10svh;
     margin-top: 3em;
     box-shadow: 10px -4px 17px 6px rgba(162,223,232,0.57);
+}
+
+.footer{
+    background-color: darkslategrey;
+    opacity: .8;
+}
+
+.footer > div > ul li.flex-basis-20 {
+    flex-basis: 20%;
+    text-decoration: none;
+    color: aliceblue;
+    padding: .3em .6em;
+    border-radius: .6em;
+}
+
+.footer > div > ul li.flex-basis-10 {
+    flex-basis: 10%;
+    padding: .3em .6em;
+    border-radius: .6em;
+}
+
+.footer > div > ul li:hover {
+    background-color: darkgray;
+}
+
+.footer > div > ul li a {
+    text-decoration: none;
+    color: aliceblue;
 }
 
 header {

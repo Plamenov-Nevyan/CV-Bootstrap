@@ -3,29 +3,9 @@ body {
 }
 
 main .row {
-    min-height: 80svh;
-}
-main .about-section .curve::before {
-    content: '';
-    display: block;
-    position: absolute;
-    border-radius: 100% 50%;
-    width: 55%;
-    height: 100%;
-    transform: translate(85%, 60%);
-    background-color: hsl(216, 21%, 16%);
-}
-
-main .about-section .curve::after {
-    content: '';
-    display: block;
-    position: absolute;
-    border-radius: 100% 50%;
-    width: 55%;
-    height: 100%;
-    background-color: #3c31dd;
-    transform: translate(-4%, 40%);
-    z-index: -1;
+    min-height: 60svh;
+    margin-top: 3em;
+    box-shadow: 10px -4px 17px 6px rgba(162,223,232,0.57);
 }
 
 header {
@@ -33,7 +13,10 @@ header {
     z-index: 100;
     position: sticky;
     top: 0;
-    min-width: 90svw;
+    width: 100svw;
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
 }
 
 header .links-wrapper {
@@ -44,49 +27,29 @@ header .links-wrapper a {
     margin-right: 1em;
 }
 
-header .row-nav nav {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 10svh;
+header .row {
+    min-height: 5svh;
+    background-color: black;
 }
 
-header .row-nav nav ul {
-    display: flex;
-    list-style-type: none;
-    gap: 2em;
-    align-items: center;
+.wrapper main .container .about-section {
+    background-color: white;
 }
 
-header .row-nav nav ul li {
-    cursor: pointer;
-}
-
-main .about-section .content-wrapper {
+.about-section > .image-container {
     display: flex;
     justify-content: center;
     align-items: flex-start;
-    flex-wrap: wrap;
-}
-
-main .about-section .image-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
     flex: 0 1 20%;
-    margin-top: 1em;
+    min-height: 60svh;
+    padding: 1em;
+    background-color: burlywood;
 }
 
-main .about-section .text-container {
-    flex: 1 1 100%;
-    justify-content: center;
-    align-items: flex-start;
-    margin-top: 0;
+.about-section > .text-container {
+    padding: 1em;
 }
 
-main .about-section .text-container h2 {
-    text-align: center;
-}
 
 .skills-and-portfolio-section > div .progress {
     height: 25px;

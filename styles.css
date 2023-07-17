@@ -1,5 +1,9 @@
+body {
+    overflow-x: hidden;
+}
+
 main .row {
-    min-height: 100svh;
+    min-height: 80svh;
 }
 main .about-section .curve::before {
     content: '';

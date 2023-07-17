@@ -60,6 +60,20 @@ header .row {
     background-color: black;
 }
 
+#toggle-header-btn {
+    max-width: 5em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: .3em 1em;
+    border-radius: 5em;
+    position: sticky;
+    top: 0em;
+    z-index: 200;
+    left: 1em;
+    background-color: orangered;
+}
+
 .wrapper main .container .about-section {
     background-color: white;
 }

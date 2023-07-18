@@ -9,7 +9,7 @@ main .row {
 }
 
 .footer{
-    background-color: darkslategrey;
+    background-color: darkslateblue;
     opacity: .8;
     min-height: 10svh;
     height: fit-content;
@@ -19,6 +19,7 @@ main .row {
     flex-basis: 20%;
     text-decoration: none;
     color: aliceblue;
+    font-weight: bold;
     padding: .3em .6em;
     border-radius: .6em;
     min-height: 10%;
@@ -37,6 +38,7 @@ main .row {
 .footer > div > ul li a {
     text-decoration: none;
     color: aliceblue;
+    font-weight: bold;
 }
 
 header {
@@ -52,6 +54,8 @@ header {
     align-items: flex-start;
     padding: 1em;
 }
+
+
 
 header .links-wrapper {
     text-align: center;

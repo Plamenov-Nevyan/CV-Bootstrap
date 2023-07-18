@@ -4,16 +4,16 @@ let toggleHeaderBtn = document.getElementById('toggle-header-btn')
 let aboutSection = document.getElementById('about')
 let workAndExpSection = document.getElementById('work-and-experience')
 let skillsAndPfolioSection = document.getElementById('skills-and-portfolio')
+header.style.display = 'none'
 
-window.addEventListener('load', () => {
-    window.innerWidth > 760 ? header.style.display = 'none' : header.style.display = 'flex'
-})
+// window.addEventListener('load', () => {
+//     window.innerWidth > 760 ? header.style.display = 'none' : header.style.display = 'flex'
+// })
 
 attachNavEvents(cvLinks)
 toggleHeader()
 
 window.addEventListener('scroll', (e) => {
-    console.log(e.currentTarget.scrollY)
     if(e.currentTarget.scrollY < 600){
         cvLinks.forEach(link => link.classList.remove('text-bg-success'))
         cvLinks[0].classList.add('text-bg-success')

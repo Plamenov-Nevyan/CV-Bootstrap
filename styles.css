@@ -65,6 +65,11 @@ header .links-wrapper a {
     margin-right: 1em;
 }
 
+header .links-wrapper a:hover {
+    background-color: darkgreen;
+    opacity: .7;
+}
+
 header .row {
     min-height: 5svh;
     background-color: black;
@@ -83,6 +88,7 @@ header .row {
     left: 1em;
     background-color: orangered;
     min-height: 5em;
+    cursor: pointer;
 }
 
 #toggle-nav {
